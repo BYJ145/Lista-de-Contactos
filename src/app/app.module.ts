@@ -4,13 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Modulo necesario para usar en formularios
+import { FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // Import necesario para usar en formularios
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

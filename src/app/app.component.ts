@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lista-de-Contactos';
+  title:string = 'Angular CRUD';
+
+  // Se crea Objeto de tipo arreglo para almacenar empleados
+  employees = [
+    {'name': 'Fazt', position: 'Manager'},
+    {'name': 'Maria', position: 'Designer'},
+    {'name': 'Fernando', position: 'Programmer'}
+  ];
 }
