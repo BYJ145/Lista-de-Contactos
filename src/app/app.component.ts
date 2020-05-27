@@ -21,9 +21,9 @@ export class AppComponent {
     // Guardaremos los datos introducidos a travez del formulario
     this.employees.push(this.model);
   }
-  deleteEmployee():void{
+  deleteEmployee(i):void{
   }
-  editEmployee():void{
+  editEmployee(i):void{
   }
   updateEmployee(){
   }
