@@ -15,7 +15,8 @@ export class AppComponent {
     {'name': 'Fernando', position: 'Programmer', email: 'FernandoP'}
   ];
   // Modelos que servira para actualizar los datos (databinding)
-  model:any = {};
+  model : any = {};
+  model2 : any = {};
   // Se agrega metodos para le manejo de los datos
   addEmployee():void{
     // Guardaremos los datos introducidos a travez del formulario
