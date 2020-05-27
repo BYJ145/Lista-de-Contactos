@@ -18,6 +18,8 @@ export class AppComponent {
   model:any = {};
   // Se agrega metodos para le manejo de los datos
   addEmployee():void{
+    // Guardaremos los datos introducidos a travez del formulario
+    this.employees.push(this.model);
   }
   deleteEmployee():void{
   }
