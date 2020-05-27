@@ -10,9 +10,9 @@ export class AppComponent {
 
   // Se crea Objeto de tipo arreglo para almacenar empleados
   employees = [
-    {'name': 'Fazt', position: 'Manager'},
-    {'name': 'Maria', position: 'Designer'},
-    {'name': 'Fernando', position: 'Programmer'}
+    {'name': 'Fazt', position: 'Manager', email: 'Fazt@gmail.com'},
+    {'name': 'Maria', position: 'Designer', email: 'MariaD@gmail'},
+    {'name': 'Fernando', position: 'Programmer', email: 'FernandoP'}
   ];
   // Modelos que servira para actualizar los datos (databinding)
   model:any = {};

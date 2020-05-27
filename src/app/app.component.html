@@ -73,6 +73,7 @@
           <tr *ngFor="let employee of employees; let i = index">
             <td>{{employee.name}}</td>
             <td>{{employee.position}}</td>
+            <td>{{employee.email}}</td>
             <td>
               <a (click) = "editEmployee(i)" class="btn btn-success">
                 Edit
