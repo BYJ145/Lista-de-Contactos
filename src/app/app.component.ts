@@ -14,4 +14,16 @@ export class AppComponent {
     {'name': 'Maria', position: 'Designer'},
     {'name': 'Fernando', position: 'Programmer'}
   ];
+  // Modelos que servira para actualizar los datos (databinding)
+  model:any = {};
+  // Se agrega metodos para le manejo de los datos
+  addEmployee():void{
+  }
+  deleteEmployee():void{
+  }
+  editEmployee():void{
+  }
+  updateEmployee(){
+  }
+
 }
