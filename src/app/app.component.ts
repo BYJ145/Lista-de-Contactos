@@ -35,8 +35,17 @@ export class AppComponent {
     // i = indice el arreglo
     this.myvalue = i;
   }
-  updateEmployee(){
-    
+  updateEmployee():void{
+    let ind = this.myvalue;
+    for (let index = 0; index < this.employees.length; index++) {
+      if(ind == index){
+        // Se asigna el modelo en la posicion correspondiente del array
+        this.employees[ind] = this.model2;
+        // Se limpia el modelo
+        this.model2 = {};
+      }
+      
+    }
   }
 
 }
