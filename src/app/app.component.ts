@@ -56,5 +56,9 @@ export class AppComponent {
       
     }
   }
+  // Metodo para eliminar el msg
+  closeAlert():void{
+    this.msg = "";
+  }
 
 }
