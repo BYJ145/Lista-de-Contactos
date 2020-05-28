@@ -19,16 +19,20 @@ export class AppComponent {
   model2 : any = {};
   // Se agrega atrituto para almacenar el index
   myvalue;
+  // Atributo para mostrar mensaje
+  msg: string = "";
   // Se agrega metodos para le manejo de los datos
 
   addEmployee():void{
     // Guardaremos los datos introducidos a travez del formulario
     this.employees.push(this.model);
+    this.msg = "Data loaded";
   }
   deleteEmployee(i):void{
     var answer = confirm("¿Are you sure?");
     if (answer) {
       this.employees.splice(i, 1);
+      this.msg = "Data delete";
     }
   }
   editEmployee(i):void{
@@ -45,6 +49,7 @@ export class AppComponent {
       if(ind == index){
         // Se asigna el modelo en la posicion correspondiente del array
         this.employees[ind] = this.model2;
+        this.msg = "Data updated";
         // Se limpia el modelo
         this.model2 = {};
       }
