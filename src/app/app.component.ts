@@ -25,7 +25,11 @@ export class AppComponent {
     // Guardaremos los datos introducidos a travez del formulario
     this.employees.push(this.model);
   }
-  deleteEmployee():void{
+  deleteEmployee(i):void{
+    var answer = confirm("¿Are you sure?");
+    if (answer) {
+      this.employees.splice(i, 1);
+    }
   }
   editEmployee(i):void{
     // Se "prepara" los datos para ser actualizados
