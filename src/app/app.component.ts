@@ -21,8 +21,9 @@ export class AppComponent {
   myvalue;
   // Atributo para mostrar mensaje
   msg: string = "";
+  // Atributo para esconder formulario para actualizar
+  hideUpdate: boolean = true;
   // Se agrega metodos para le manejo de los datos
-
   addEmployee():void{
     // Guardaremos los datos introducidos a travez del formulario
     this.employees.push(this.model);
@@ -36,6 +37,7 @@ export class AppComponent {
     }
   }
   editEmployee(i):void{
+    this.hideUpdate = false;
     // Se "prepara" los datos para ser actualizados
     this.model2.name = this.employees[i].name;
     this.model2.position = this.employees[i].position;
